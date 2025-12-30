@@ -1,0 +1,14 @@
+interval: 10
+
+exporter:
+  type: dogstatsd
+  host: localhost
+  port: 8125
+
+collectors:
+  - cpu
+  - memory
+
+tags:
+  - service:observability 
+  - app:observability-metrics-agent
